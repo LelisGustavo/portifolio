@@ -277,5 +277,10 @@ main {
         margin-right: 15px;
     }
 
+    /* Rodapé */
+    .footer__container {
+        width: 110%;
+    }
+
 }
 
