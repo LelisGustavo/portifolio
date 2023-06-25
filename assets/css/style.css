@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --color-1: #42c6fa;
+    --color-2: #0b2c59;
+    --color-3: #becec4;
+    --color-4: #004b59;
+    --font-title: 'Montserrat', sans-serif;
+    --font-text: 'Forum', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin-top: 10px;
+    color: var(--color-4);
+    background-color: lightgray; 
+}
+
+h1, h2, h4 {
+    font-family: var(--font-title);
+}
+
+hr {
+    margin: 10px;
+}
+
+i {
+    color: var(--color-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Descrição */
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    justify-content: flex-start; 
+}
+
+.image__content {
+    display: flex;
+    flex-direction: column; justify-content: center; align-items: center;
+    height: 250px;
+}
+
+.image__content > img {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    color: var(--color-2);
+    font-family: var(--font-title);
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.skills__content > p {
+    padding: 5px;
+    margin: 5px;
+}
+
+.skills__bar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    height: 18px;
+    border-radius: 5px;
+}
+
+.skills__bar {
+    background-color: rgba(66, 198, 250, .3);
+}
+
+.skills__percentage, .skills__bar {
+    height: 17px;
+    border-radius: 10px;
+}
+
+.skills__percentage {
+    display: block;
+    background-color: var(--color-1);
+}
+
+.skills__html {
+    width: 90%;
+}
+
+.skills__css {
+    width: 80%;
+}
+
+.skills__js {
+    width: 70%;
+}
+
+.skills__mysql {
+    width: 80%;
+}
+
+.skills__php {
+    width: 80%;
+}
+
+.skills__postman {
+    width: 70%;
+}
+
+.skills__portuguese {
+    width: 100%;
+}
+
+.skills__english {
+    width: 80%;
+}
+
+.skills__spanish {
+    width: 50%;
+}
+
+/* Experiências */
+.work__container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    justify-content: flex-start; 
+}
+
+.work__container > p, h4 {
+    padding: 5px;
+}
+
+/* Educação */
+.education__container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    justify-content: flex-start;
+}
+
+.education__container > p, h4 {
+    padding: 5px;
+}
+
+/* Sobre mim */
+.about__container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    justify-content: flex-start;
+}
+
+.about__container > p, h4, a {
+    padding: 5px;
+}
+
+.about__container > a {
+    color: var(--color-4);
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container {
+    padding: 10px;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    text-align: center;
+}
+
+.footer__container > p {
+    color: var(--color-3);
+    padding: 5px;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+}
+
+.footer__container > p > a {
+    color: var(--color-1);
+    transition: 1s;
+    padding: 5px;
+}
+
+.footer__container > p > a:hover {
+    transition: 1s;
+    color: white;
+}
+
+.footer__container > p > a > i:hover {
+    transition: 1s;
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    
+    main {
+        flex-direction: row;
+    }
+
+    /* Descrição */
+    .profile__container {
+        width: 30vw; 
+        margin: unset;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    /* Experiências */
+    .work__container {
+        width: 70vw;
+        margin: unset;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+    /* Educação */
+    .education__container {
+        width: 70vw;
+        margin: unset;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+    /* Sobre mim */
+    .about__container {
+        width: 70vw;
+        margin: unset;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+}
+
